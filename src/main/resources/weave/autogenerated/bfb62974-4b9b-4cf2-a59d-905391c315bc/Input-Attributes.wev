@@ -1,0 +1,29 @@
+%dw 2.0
+
+type auto_bfb62974_4b9b_4cf2_a59d_905391c315bc_Input_Attributes = {|
+  clientCertificate?: {|
+    publicKey?: {|  |}, 
+    "type"?: String, 
+    encoded?: Binary
+  |}, 
+  headers: {|  |}, 
+  listenerPath: String, 
+  method: String, 
+  queryParams: {|
+    id_type: "CORP_PAN" | "DL" | "VOTER" | "CIN" | "AADHAR" | "PAN" | "CKYC" | "PASSPORT", 
+    dob?: String, 
+    id_num?: String, 
+    full_name?: String, 
+    gender?: "T" | "F" | "M"
+  |}, 
+  queryString: String, 
+  relativePath: String, 
+  remoteAddress: String, 
+  requestPath: String, 
+  requestUri: String, 
+  scheme: String, 
+  uriParams: {|  |}, 
+  version: String, 
+  localAddress: String
+|}
+
